@@ -39,13 +39,13 @@ def text_to_speech(text, voice=""):
 
 
 def openai_process_message(user_message):
-    # prompt = "\"Act like a personal assistant. You can respond to questions, translate sentences, summarize news, and give recommendations. " + user_message + "\""
-    # print("prompt:", prompt)
-    # openai_response = openai.Completion.create(
-    #     model="text-davinci-003", prompt=prompt, max_tokens=4000)
-    # print("openai response:", openai_response)
-    # response_text = openai_response.choices[0].text
-    return clean_text("This is my response. How are you?")
+    prompt = "\"Act like a personal assistant. You can respond to questions, translate sentences, summarize news, and give recommendations. " + user_message + "\""
+    print("prompt:", prompt)
+    openai_response = openai.Completion.create(
+        model="text-davinci-003", prompt=prompt, max_tokens=4000)
+    print("openai response:", openai_response)
+    response_text = openai_response.choices[0].text
+    return clean_text(response_text)
 
 
 def clean_text(text):

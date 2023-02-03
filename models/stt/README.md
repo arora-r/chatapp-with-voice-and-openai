@@ -2,7 +2,7 @@
 
 This recipe shows how you can run a single-container Speech-to-Text (STT) service on your local machine using Docker.
 
-_Please Note: these images take a while to load. It can take upto 10 minutes on the first run to pull everything._
+_Please Note: these images take a while to load._
 
 ## Prerequisites
 

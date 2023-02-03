@@ -2,7 +2,7 @@
 
 This tutorial demonstrates how you can deploy a single-container Text-to-Speech (TTS) service on your local machine using Docker.
 
-*Please Note: these images take a while to load. It can take upto 10 minutes on the first run to pull everything.*
+_Please Note: these images take a while to load._
 
 ## Prerequisites
 
@@ -58,80 +58,80 @@ You will see output similar to the following.
 
 ```json
 {
-    "voices": [
-        {
-            "name": "en-US_MichaelV3Voice",
-            "language": "en-US",
-            "gender": "male",
-            "description": "Michael: American English male voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_MichaelV3Voice"
-        },
-        {
-            "name": "en-US_EmilyV3Voice",
-            "language": "en-US",
-            "gender": "female",
-            "description": "Emily: American English female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_EmilyV3Voice"
-        },
-        {
-            "name": "en-GB_JamesV3Voice",
-            "language": "en-GB",
-            "gender": "male",
-            "description": "James: British English male voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-GB_JamesV3Voice"
-        },
-        {
-            "name": "en-US_LisaV3Voice",
-            "language": "en-US",
-            "gender": "female",
-            "description": "Lisa: American English female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_LisaV3Voice"
-        },
-        {
-            "name": "en-US_HenryV3Voice",
-            "language": "en-US",
-            "gender": "male",
-            "description": "Henry: American English male voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_HenryV3Voice"
-        },
-        {
-            "name": "en-GB_KateV3Voice",
-            "language": "en-GB",
-            "gender": "female",
-            "description": "Kate: British English female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-GB_KateV3Voice"
-        }
-    ]
+  "voices": [
+    {
+      "name": "en-US_MichaelV3Voice",
+      "language": "en-US",
+      "gender": "male",
+      "description": "Michael: American English male voice. Dnn technology.",
+      "customizable": true,
+      "supported_features": {
+        "custom_pronunciation": true,
+        "voice_transformation": false
+      },
+      "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_MichaelV3Voice"
+    },
+    {
+      "name": "en-US_EmilyV3Voice",
+      "language": "en-US",
+      "gender": "female",
+      "description": "Emily: American English female voice. Dnn technology.",
+      "customizable": true,
+      "supported_features": {
+        "custom_pronunciation": true,
+        "voice_transformation": false
+      },
+      "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_EmilyV3Voice"
+    },
+    {
+      "name": "en-GB_JamesV3Voice",
+      "language": "en-GB",
+      "gender": "male",
+      "description": "James: British English male voice. Dnn technology.",
+      "customizable": true,
+      "supported_features": {
+        "custom_pronunciation": true,
+        "voice_transformation": false
+      },
+      "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-GB_JamesV3Voice"
+    },
+    {
+      "name": "en-US_LisaV3Voice",
+      "language": "en-US",
+      "gender": "female",
+      "description": "Lisa: American English female voice. Dnn technology.",
+      "customizable": true,
+      "supported_features": {
+        "custom_pronunciation": true,
+        "voice_transformation": false
+      },
+      "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_LisaV3Voice"
+    },
+    {
+      "name": "en-US_HenryV3Voice",
+      "language": "en-US",
+      "gender": "male",
+      "description": "Henry: American English male voice. Dnn technology.",
+      "customizable": true,
+      "supported_features": {
+        "custom_pronunciation": true,
+        "voice_transformation": false
+      },
+      "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_HenryV3Voice"
+    },
+    {
+      "name": "en-GB_KateV3Voice",
+      "language": "en-GB",
+      "gender": "female",
+      "description": "Kate: British English female voice. Dnn technology.",
+      "customizable": true,
+      "supported_features": {
+        "custom_pronunciation": true,
+        "voice_transformation": false
+      },
+      "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-GB_KateV3Voice"
+    }
+  ]
 }
 ```
 
