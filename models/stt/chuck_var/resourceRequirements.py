@@ -1,8 +1,9 @@
 class RapidResourceRequirement:
     resourceRequirement = {
-        'marginalMem': 0.9 * 2 ** 30, # 900MB
+        'marginalMem': 0.9 * 2 ** 30,  # 900MB
         'marginalCpu': 60
     }
+
 
 class RnntResourceRequirement:
     resourceRequirement = {

@@ -16,7 +16,7 @@ python -m http.server --bind 127.0.0.1 --directory /models 3333 &
 ./runChuck.sh &
 
 # wait for the server to become ready, which happens after it downloads the models
-max_tries=10
+max_tries=1000
 tries=0
 while [[ tries -lt max_tries ]]; do
   curl -sk -o /dev/null "localhost:1080/v1/miniHealthCheck"

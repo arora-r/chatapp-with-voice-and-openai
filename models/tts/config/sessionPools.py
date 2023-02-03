@@ -1,11 +1,13 @@
 class DefaultPolicy:
     sessionPool = {}
 
+
 class PreWarmingPolicy:
     sessionPool = {
         'minWarmSessions': 1,
         'maxUseCount': 1000
     }
+
 
 class NoPreWarmingPolicy:
     sessionPool = {

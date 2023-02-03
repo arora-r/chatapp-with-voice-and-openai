@@ -11,8 +11,7 @@
       "component": "runtime",
       "group": "default",
       "models": [
-        "en-US_Multimedia",
-        "fr-FR_Multimedia"
+        "en-US_Multimedia"
       ]
     }
   },
