@@ -1,0 +1,21 @@
+version: '3'
+services:
+  tts:
+    build:
+      context: ./models/tts
+    environment:
+      - ACCEPT_LICENSE=true
+    ports:
+      - "1081:1080"
+  stt:
+    build:
+      context: ./models/stt
+    environment:
+      - ACCEPT_LICENSE=true
+    ports:
+      - "1080:1080"
+  chatapp:
+    build:
+      context: .
+    ports:
+      - "8000:8000"

@@ -5,7 +5,7 @@ openai.api_key = "..."
 
 
 def speech_to_text(audio_binary):
-    base_url = 'http://localhost:1080'
+    base_url = 'http://host.docker.internal:1080'
     api_url = base_url + '/speech-to-text/api/v1/recognize'
     params = {'model': 'en-US_Multimedia'}
     body = audio_binary
@@ -27,7 +27,7 @@ def text_to_speech(text, voice=""):
 
     json_data = {'text': text}
 
-    base_url = 'http://localhost:1081'
+    base_url = 'http://host.docker.internal:1081'
     api_url = base_url + '/text-to-speech/api/v1/synthesize?output=output_text.wav'
 
     if voice != "" and voice != "default":
