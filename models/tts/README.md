@@ -84,66 +84,6 @@ You will see output similar to the following.
             "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_EmilyV3Voice"
         },
         {
-            "name": "fr-CA_LouiseV3Voice",
-            "language": "fr-CA",
-            "gender": "female",
-            "description": "Louise: French Canadian female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/fr-CA_LouiseV3Voice"
-        },
-        {
-            "name": "en-US_OliviaV3Voice",
-            "language": "en-US",
-            "gender": "female",
-            "description": "Olivia: American English female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_OliviaV3Voice"
-        },
-        {
-            "name": "it-IT_FrancescaV3Voice",
-            "language": "it-IT",
-            "gender": "female",
-            "description": "Francesca: Italian (italiano) female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/it-IT_FrancescaV3Voice"
-        },
-        {
-            "name": "en-US_AllisonV3Voice",
-            "language": "en-US",
-            "gender": "female",
-            "description": "Allison: American English female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_AllisonV3Voice"
-        },
-        {
-            "name": "fr-FR_ReneeV3Voice",
-            "language": "fr-FR",
-            "gender": "female",
-            "description": "Renee: French (français) female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/fr-FR_ReneeV3Voice"
-        },
-        {
             "name": "en-GB_JamesV3Voice",
             "language": "en-GB",
             "gender": "male",
@@ -168,18 +108,6 @@ You will see output similar to the following.
             "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_LisaV3Voice"
         },
         {
-            "name": "en-US_KevinV3Voice",
-            "language": "en-US",
-            "gender": "male",
-            "description": "Kevin: American English male voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_KevinV3Voice"
-        },
-        {
             "name": "en-US_HenryV3Voice",
             "language": "en-US",
             "gender": "male",
@@ -190,30 +118,6 @@ You will see output similar to the following.
                 "voice_transformation": false
             },
             "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-US_HenryV3Voice"
-        },
-        {
-            "name": "en-GB_CharlotteV3Voice",
-            "language": "en-GB",
-            "gender": "female",
-            "description": "Charlotte: British English female voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/en-GB_CharlotteV3Voice"
-        },
-        {
-            "name": "fr-FR_NicolasV3Voice",
-            "language": "fr-FR",
-            "gender": "male",
-            "description": "Nicolas: French (français) male voice. Dnn technology.",
-            "customizable": true,
-            "supported_features": {
-                "custom_pronunciation": true,
-                "voice_transformation": false
-            },
-            "url": "http://localhost:1081/text-to-speech/api/v1/voices/fr-FR_NicolasV3Voice"
         },
         {
             "name": "en-GB_KateV3Voice",

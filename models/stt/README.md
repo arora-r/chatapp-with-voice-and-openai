@@ -2,7 +2,7 @@
 
 This recipe shows how you can run a single-container Speech-to-Text (STT) service on your local machine using Docker.
 
-*Please Note: these images take a while to load. It can take upto 10 minutes on the first run to pull everything.*
+_Please Note: these images take a while to load. It can take upto 10 minutes on the first run to pull everything._
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ Build a container image with the provided `Dockerfile`.
 docker build . -t stt-standalone
 ```
 
-The build process uses configuration files from the `chuck_var` directory. The resulting image will serve two pretrained models ( `en-us-multimedia` and `fr-fr-multimedia` ) supporting two different languages: English (en_US) and French (fr_FR). 
+The build process uses configuration files from the `chuck_var` directory. The resulting image will serve one pretrained model (`en-us-multimedia`) supporting only English (en_US).
 
 Other [models](https://www.ibm.com/docs/en/watson-libraries?topic=home-models-catalog) can be added to support other languages by updating the provided `Dockerfile`, as well as `env_config.json` and `sessionPools.yaml` in the `chuck_var` directory.
 
@@ -76,19 +76,6 @@ You will see output similar to the following.
             "speaker_labels": true
          },
          "url": "http://localhost:1080/speech-to-text/api/v1/models/en-US_Multimedia"
-      },
-      {
-         "name": "fr-FR_Multimedia",
-         "rate": 16000,
-         "language": "fr-FR",
-         "description": "French multimedia model for broadband audio (16kHz or more)",
-         "supported_features": {
-            "custom_acoustic_model": false,
-            "custom_language_model": true,
-            "low_latency": true,
-            "speaker_labels": true
-         },
-         "url": "http://localhost:1080/speech-to-text/api/v1/models/fr-FR_Multimedia"
       }
    ]
 ```
@@ -101,15 +88,7 @@ curl "http://localhost:1080/speech-to-text/api/v1/recognize" \
   --data-binary @sample_dataset/en-quote-1.wav
 ```
 
-For French audio samples, specify the model `fr-FR_Multimedia`:
-
-```sh
-curl "http://localhost:1080/speech-to-text/api/v1/recognize?model=fr-FR_Multimedia" \
-  --header "Content-Type: audio/wav" \
-  --data-binary @sample_dataset/fr-quote-1.wav
-```
-
-In both cases, transcriptions (in JSON format) are returned as standard output of the ```curl``` commands.
+In both cases, transcriptions (in JSON format) are returned as standard output of the `curl` commands.
 
 ## Acknowledgements
 
